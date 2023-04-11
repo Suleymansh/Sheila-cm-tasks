@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(183, 26, 76);
+  font-family: "Roboto", sans-serif;
+}
+.signbox {
+  width: 25%;
+  height: 50vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 90px;
+
+  h1 {
+    text-align: center;
+    color: rgb(183, 26, 76);
+    padding: 10px;
+  }
+  form {
+    width: 330px;
+    margin-left: 100px;
+
+    input {
+      width: 80%;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 20px;
+
+      &:hover {
+        border: 3px solid red !important;
+        cursor: pointer;
+      }
+    }
+  }
+  .but {
+    input {
+      width: 90%;
+      height: 50px;
+
+      background-image: linear-gradient(
+        to right,
+        #ff8177 0%,
+        #ff867a 0%,
+        #ff8c7f 21%,
+        #f99185 52%,
+        #cf556c 78%,
+        #b12a5b 100%
+      );
+      background-color: red;
+    }
+  }
+}
+
+.user,
+.ema,
+.lock {
+  position: relative;
+
+  i {
+    position: absolute;
+
+    top: 40px;
+    right: 50px;
+  }
+}

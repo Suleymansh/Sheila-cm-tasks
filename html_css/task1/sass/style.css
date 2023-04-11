@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(183, 26, 76);
+  font-family: "Roboto", sans-serif;
+}
+
+.signbox {
+  width: 25%;
+  height: 50vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 90px;
+}
+.signbox h1 {
+  text-align: center;
+  color: rgb(183, 26, 76);
+  padding: 10px;
+}
+.signbox form {
+  width: 330px;
+  margin-left: 100px;
+}
+.signbox form input {
+  width: 80%;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.signbox form input:hover {
+  border: 3px solid red !important;
+  cursor: pointer;
+}
+.signbox .but input {
+  width: 90%;
+  height: 50px;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  background-color: red;
+}
+
+.user,
+.ema,
+.lock {
+  position: relative;
+}
+.user i,
+.ema i,
+.lock i {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}/*# sourceMappingURL=style.css.map */
