@@ -78,11 +78,11 @@ function ededlerinCemi(sayi) {
 // 2.Verdiyim araliqlarda random eded create eden function yazin:
 //   Meselen: console.log(genNum(1,100)) // random int between 1 to 100
   
-// function genNum(){
-//    const random =  Math.floor(Math.random()*100+1)
-//    return random;
-// }
-//  console.log(genNum());
+function genNum( min, max){
+   const random =  Math.floor(Math.random(max-min) +1) +min
+   return random;
+}
+ console.log(genNum(2, 300));
 
 // 3.Verilen reqem, ededlerin cemini hesablasin(Unlimited eded daxil etmek olur);
 //   Meselen: console.log(addNumber(2,10,10,20,13,15))// 70
