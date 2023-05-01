@@ -82,7 +82,7 @@ function genNum( min, max){
    const random =  Math.floor(Math.random(max-min) +1) +min
    return random;
 }
- console.log(genNum(2, 300));
+ console.log(genNum(4, 400));
 
 // 3.Verilen reqem, ededlerin cemini hesablasin(Unlimited eded daxil etmek olur);
 //   Meselen: console.log(addNumber(2,10,10,20,13,15))// 70
