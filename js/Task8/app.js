@@ -9,3 +9,4 @@ function getFactorial(num) {
 }
 const result = getFactorial(6);
 console.log(result);
+
