@@ -8,6 +8,7 @@
 // }
 // prop2Taker({ one: 1, "prop-2": 2 });
 // prop2Taker({  'prop-2': 'two',  prop: 'test'})
+ 
 
 // #task2.
 // propertyTaker adinda funksiya yaradin. Argument kimi obyekt (obj) ve string (proprtyName) alsin. Hemin obyektin verdiyim propertyni cixarsin. Mes:
