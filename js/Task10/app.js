@@ -211,3 +211,8 @@
 
 // let result = gmail(newGmail);
 // console.log(result);
+
+// let eded = 12345
+
+// console.log(eded);
+
