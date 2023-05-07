@@ -1,3 +1,6 @@
+
+
+
 // #task1
 // function ilkHerfiDeyis( soz, ilkHerf ) {
 
@@ -24,15 +27,14 @@
 
 //    return sentence.slice(1);
 // }
+
 //  console.log(removeCharacterFromString('Alion'));
 //
-
 // #task4
 //  Normalda Bazar ertesinden Cumeye qeder ders olur. Ele bir funksiya qurun ki, bize alert-le desin bu gun derse getmeliyik ya yox.
 
 // const today = new Date();
 // const day = today.getDay();
-
 // function weekDay( day) {
 //   if( day === 6 || day === 7){
 //     alert(" cocugum ders yoxdu")
@@ -168,7 +170,20 @@
 // //   console.log(result);   bu shekilde de yaza bilerik
 //  const newstr = (str)=> str.slice(0,7).concat(point);
 //   let result = newstr(str);
-//  console.log(result);
+//  console.log(result); 
+
+//  esl yolu ashagidaki kimidi
+
+// const nameFormat=(str)=>{
+//    let IndexofSpace = str.indexOf(' ')
+   
+//    return str.slice(0, IndexofSpace+2).concat(".");
+
+// }
+// console.log(nameFormat('Alionlnlk Greenheart'));
+
+
+
 
 //  let newGmail= prompt(' gmail daxil et: ')
 //  const gmail = (validation)=>{
@@ -181,6 +196,13 @@
 //  }
 //  let result = gmail(newGmail);
 //  console.log(result);
+
+// esl yolu ashagidaki kimidi
+// const validategmail = (gmail) =>gmail.endsWith("@gmail.com") && gmail.length >= 15 ? true:false
+   
+ 
+// console.log(validategmail('nhkjje@gmail.com'));
+
 
 // let numbers = [5, 2, 9, 1, 5, 6];
 // let numbers = 12345
@@ -217,7 +239,6 @@
 // console.log(iscompany(" alffbj Mmc"));
 // iscompany(obj);
 
-
 // const iscompany = (ad) => ad.toUppercase().endsWith("MMC");
 // console.log(iscompany(" alffbj MMC")); evde yoxla
 
@@ -227,7 +248,6 @@
 
 // console.log( emojis[randomeded]);
 
-
 // 1.İstifadəçidən ikirəqəmli ədəd daxil etməsini xahiş edin. Bu rəqəmi üçrəqəmli olana qədər, 7 artırın. Son dəyəri konsola çıxarın.
 
 // let  eded= prompt(' eded daxil et')
@@ -236,4 +256,3 @@
 
 // console.log(eded);
 // }
-
