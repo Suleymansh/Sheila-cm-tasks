@@ -175,7 +175,7 @@
 // function filterByStartWitdh(text){
 //     const arr =[]
 //     for(let elem of arr){
-//         if(wlwm.startsWith(text)){
+//         if(elem.startsWith(text)){
 //             arr.push(elem)
 //         }
 //     }
