@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.headtext{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;   
+}
+
+.totalcourse{
+  max-width: 1350px;
+  display: flex;
+  margin: 0 auto;
+  padding-right: 20px ;
+  padding-left: 20px;
+  margin-top: 25px;
+  .leftcourse{
+     width: 62%;
+    margin-right: 50px;
+    p{
+      font-size: 25px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.занятийtotal{
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  .cardtotalзанятий{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65%;
+
+.cardзанятий{
+  width: 120px;
+  height: 20px;
+}
+  }
+}
+
+
+@media (max-width:1024px){
+  .headtext{
+    max-width: 860px;
+  }
+.totalcourse{
+  max-width: 860px;
+
+}
+
+.занятийtotal{
+  .leftзанятий{
+    img{
+      display: none;
+    }
+  }
+}
+ .cardtotalзанятий{
+
+ }
+}
+
+
+@media (max-width:774px){
+    .headtext{
+
+  }
+.totalcourse{
+
+ flex-direction: column;
+ .leftcourse{
+    max-width: 1600px;
+
+ }
+
+}
+
+.занятийtotal{
+
+  .leftзанятий{
+    img{
+    
+    }
+  }
+}
+ .cardtotalзанятий{
+
+min-height: 30vh;
+
+ }
+} 
