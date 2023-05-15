@@ -231,8 +231,6 @@ const users = [
   },
 ];
 
-
-
 // Task1. Get all users whose zip code is less than or equal to 50000.
 //  const userZipName = users.filter((user) => {
 //    return (user.address.zipcode) === 5000 || (user.address.zipcode) > 5000;
