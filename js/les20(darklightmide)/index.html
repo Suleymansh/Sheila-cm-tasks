@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+
+    <style> body{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .darkMode, .darkMode *{
+        background-color: black;
+        color: aliceblue;
+        /* transition: all 2s linear; */
+        /* transitionu ashagida setTimeout vasitesile de vere bilirik */
+
+    }
+    </style>
+  <body class="darkMode">
+  
+   
+     <h1>Hello <button>🌕</button></h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      architecto reiciendis laboriosam nihil commodi accusamus, in aut velit ad
+      repellendus?
+    </p>
+   </div>
+
+
+   <script>
+const button = document.querySelector('button')
+// setitem 2 parametr alir getitem 1 parametr alir
+if(localStorage.getItem('mode')===('dark')){
+    button.innerHTML='🌕'
+    document.body.classList.add('darkMode')
+}
+else{
+      button.innerHTML="🌞"
+     document.body.classList.remove('darkMode')
+}
+
+button.onclick=()=>{
+   document.body.classList.toggle('darkMode') 
+    //    contains true false qaytarir
+  setTimeout(() => {
+    
+ 
+  if(document.body.classList.contains('darkMode')){
+     button.innerHTML='🌕'
+     localStorage.setItem('mode', 'dark')
+   }else{
+    button.innerHTML="🌞"
+      localStorage.setItem('mode', 'light') 
+   }
+
+  },300 );
+}
+
+
+   </script>
+  </body>
+</html>
