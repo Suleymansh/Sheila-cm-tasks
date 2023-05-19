@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+
+    <form>
+      <input type="text" placeholder=" enter username" name="username" />
+      <input type="password" placeholder="enter password" name="password" />
+      <input type="email" placeholder="enter email" name="email" />
+      <button type="submit">submit</button>
+    </form>
+
+    <script>
+      const form = document.querySelector("form");
+      form.onsubmit = (e) => {
+        e.preventDefault();
+        console.log(e);
+        // const values= Array.from(e.target.children).map((input)=>input.value)
+
+        // Array.from yeni massiv yaradir ve yaxudda arrayi bele de yarada bilerik
+        //  const values= [...e.target.children].map((input)=>input.value)
+        // burada array yaratmagimizin sebebi childreni map ede bilmirik mapi yoxdu lakin massivi map ede bilirik
+        // ======================================================================================================
+        // verilenlerin hansinin email hansinin password oldugunu gormek ucun ashagidaki kimi obyekt yaradacayig
+        // children collectiondu
+        const formData = Array.from(e.target.children).reduce((a, b) => {
+          if (b.name) {
+            a[b.name] = b.value;
+          }
+          return a;
+        }, {});
+        console.log(formData);
+      };
+    </script>
+  </body>
+</html>
