@@ -51,20 +51,19 @@ const domains = [
   },
 ];
 
-
 // 1. document-e baki.az - ali - man  yazdirmalisiniz. [forEach]
 //  const result=domains.forEach(domain,index)=>{
 //  if( domain.name==="baki.az")
 // }
 // )
 
-domains.forEach((domain,index)=>{
-    if (domain.name === "baki.az") {
-        document.write(
-          domain.name + " - " + domain.owner.name + " - " + domain.owner.gender );
-    }
-
-})
+domains.forEach((domain, index) => {
+  if (domain.name === "baki.az") {
+    document.write(
+      domain.name + " - " + domain.owner.name + " - " + domain.owner.gender
+    );
+  }
+});
 
 // 2. gender-i woman olan domain-leri massive yigin. Massivi console-a yazdirin. (filter)
 //  const result =domains.filter((domain)=>domain.owner.gender==="woman")
@@ -104,7 +103,7 @@ domains.forEach((domain,index)=>{
 
 // })
 // console.log(result);
-//  8. ancaq owner-lerinin melumatlarinin oldugu massiv yaradin. (map) 
+//  8. ancaq owner-lerinin melumatlarinin oldugu massiv yaradin. (map)
 // const result= domains.map((domain)=>
 //    domain.owner
 
@@ -134,22 +133,20 @@ domains.forEach((domain,index)=>{
 // console.log(totalAge);
 
 // 12. en uzun ada malik olan domain-i tapin (forEach)
-// let longestDomain = null;
+// let longestDomain = domains[0];
 
 // domains.forEach((domain) => {
-//   if (!longestDomain|| domain.name.length > longestDomain.name.length) {
+//   if (domain.name.length > longestDomain.name.length) {
 //     longestDomain = domain;
 //   }
 // });
 
 // console.log("Domain with the longest name:", longestDomain);
 // 13. en yasli owner-e sahib olan domain-i tapin. (forEach)
-// let oldestDomain = null;
-// let oldestOwnerAge = 0;
+// let oldestDomain = domains[0];
 
 // domains.forEach((domain) => {
-//   if (domain.owner.age > oldestOwnerAge) {
-//     oldestOwnerAge = domain.owner.age;
+//   if (domain.owner.age > oldestDomain.owner.age) {
 //     oldestDomain = domain;
 //   }
 // });
@@ -158,14 +155,14 @@ domains.forEach((domain,index)=>{
 // 14. ozunun ve ya owner-nin adinda n olan domain-leri tapin. (filter)
 
 // const domainsWithNameN = domains.filter((domain) =>
-//   domain.owner.name.toLowerCase().includes("n")
+//   domain.owner.name.includes("n")||domain.name.includes("n")
 // );
 // console.log(domainsWithNameN);
-
-
-
-
-
-
+// 15. domainin esas hissesi (.com-a qeder olan hissesi) oz owner-nin job-una beraber olan domain-leri tapin. (filter)
+const result = domains.filter((domain) => {
+   let mainPart=domain.name.slice(0, domain.name.indexOf("."))
+    return mainPart===domain.owner.job
+});
+console.log(result);
 
 
