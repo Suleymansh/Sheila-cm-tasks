@@ -163,6 +163,7 @@ const result = domains.filter((domain) => {
    let mainPart=domain.name.slice(0, domain.name.indexOf("."))
     return mainPart===domain.owner.job
 });
+
 console.log(result);
 
 
